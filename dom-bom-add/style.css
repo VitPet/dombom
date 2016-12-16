@@ -1,0 +1,22 @@
+div#player {
+  width: 10px;
+  height: 10px;
+  background: black;
+  transition: all 0.2s ease-out 0s;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  }
+ 
+
+ div#player.growing { 
+  transform: scale(2.5);
+	background-color: red;
+
+}
+.target{
+	margin-left: 180px;
+}
+ body{
+ 	background-color: #E2E4E3;
+ }
