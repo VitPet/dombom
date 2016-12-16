@@ -1,6 +1,6 @@
 var navigatorMessageMap = {
     'mac': 'macos',
-    'iphone': 'ios',
+    'iphone': 'macos',
     'win': 'windows'
 };
 var platform = navigator.platform.toLowerCase();
