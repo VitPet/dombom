@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dom-Bom-5</title>
+  <style type="text/css">
+    body {
+      background-color: #999999; 
+      width: 800px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <p>
+      Функція <b>event.preventDefault</b> використовується для того, щоб відмінити подію яка відбувається за замовчуванням в браузері. Наприклад, відправка форми:
+      <pre>document.getElementById('submit').addEventListener('click', function (event) {
+        event.preventDefault();
+        alert('Submit!');
+      });
+    </pre>
+    <form  method="post">
+      <input type="text" />
+      <input id = "submit" type="submit" />
+    </form>
+
+  </p>
+  <p>
+    Функція <b>event.stopPropagation()</b> використовують для того, щоб зупинити події, які закладені у parent елементах.
+    Наприклад <a href="https://jsfiddle.net/hkL7380z/2/">JSFiddle</a><br>
+    Якщо забрати <code> e.stopPropagation();</code> у функції onClick(), то при натисканні на синій блок будемо бачити всі алерти для parent елементів. Якщо не забирати, то побачимо алерт лише того елемента на який натиснули.
+  </p>
+  <script type="text/javascript" src="script.js"></script>
+</div>
+</body>
+</html>
