@@ -1,4 +1,4 @@
-function () {
+function start () {
   putMessage();
   addRadioButton();
 }
